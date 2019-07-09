@@ -1,0 +1,57 @@
+// pm.globals.get("W");
+// pm.globals.unset("a");
+// pm.globals.set("a", "topics");
+
+// pm.sendRequest("http://39.107.96.138:3000/api/v1/topics", function (err, response) {
+//     console.log("hello!")
+//     console.log(response.json());
+// });
+// pm.test("返回的状态码是200", function () {
+//     pm.response.to.have.status(200);
+// });
+// pm.test("寻找返回结果里面是否有你需要找到字符串", function () {
+//     pm.expect(pm.response.text()).to.include("false");
+// });
+
+
+// pm.test("创建话题", function () {
+//     var jsonData = pm.response.json();
+//     console.log(jsonData.success)
+//     pm.expect(jsonData.success).to.eql(true);
+// });
+
+// pm.test("Your test name", function () {
+//     var jsonData = pm.response.json();
+//     pm.expect(jsonData."返回json数据里面的key").to.eql("key对应的值");
+// });
+
+// pm.test("Body is correct", function () {
+//     pm.response.to.have.body(" 'success': true");
+// });
+
+
+// pm.test("Content-Type is present", function () {
+//     pm.response.to.have.header("Content-Type");
+// });
+
+
+
+
+// pm.test("Response time is less than 500ms", function () {
+//     pm.expect(pm.response.responseTime).to.be.below(500);
+// });
+
+
+// pm.test("Successful POST request", function () {
+//     pm.expect(pm.response.code).to.be.oneOf([200]);
+// });
+
+// pm.test("Failure POST request", function () {
+//     pm.expect(pm.response.code).to.be.oneOf([400,500,404]);
+// });
+
+
+// pm.test("Status code name has string", function () {
+//     pm.response.to.have.status("Bad Request");
+//     pm.response.to.have.status("OK");
+// });
